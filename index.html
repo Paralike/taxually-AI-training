@@ -31,6 +31,9 @@
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
 
+    <!-- Typewriter -->
+    <script src="./js/typewriter.min.js"></script>
+
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
     <!-- FACEBOOK -->
@@ -96,7 +99,12 @@
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
-
+        <!-- SLIDE -->
+        <section class="bg-apple warp">
+          <div class="warp aligncenter">
+            <h1 id="typewriter-heading"><strong></strong></h1>
+          </div>
+        </section>
         <section>
          <span class="background" style="background-image:url('https://webslides.tv/static/images/nature.jpg')"></span>
           <!--.wrap = container (width: 90%) -->
@@ -384,8 +392,29 @@
       window.ws = new WebSlides();
     </script>
 
+
+  <!-- Typewriter -->
+  <script>
+    const app = document.getElementById('typewriter-heading');
+
+    const typewriter = new Typewriter(app, {
+      loop: true,
+      wrapperClassName: "space-typewriter",
+      cursorClassName: "space-typewriter cursor",
+    });
+
+    typewriter.typeString('Suspenseful Animations')
+      .pauseFor(1000)
+      .deleteChars(10)
+      .typeString("Stories")
+      .pauseFor(1000)
+      .deleteAll()
+      .start();
+  </script>
+
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
+
 
   </body>
 </html>
