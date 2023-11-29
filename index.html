@@ -419,6 +419,21 @@
           <!-- .end .wrap -->
         </section>
 
+        <!-- SLIDE -->
+        <section class="bg-apple ">
+          <div class="wrap size-75 ">
+            <h1>
+              <strong>Plan your week with AI</strong>
+            </h1>
+            <p>Are you wondering what we can do with planning? Below is an interactive AI module that can plan your week!</p>
+            <div>
+              <button onClick='loadIFrame(this,"http://51.124.42.42:7860/","100%","650px")'>
+                Load App
+              </button>
+            </div>
+          </div>
+        </section>
+
 
           
           <!--SLIDE-->
@@ -507,8 +522,12 @@
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
     <script>
+      WebSlides.registerPlugin('scroll', function(){});
       window.ws = new WebSlides();
     </script>
+    <!--<script>
+      window.ws = new WebSlides();
+    </script>-->
 
 
   <!-- Typewriter -->
